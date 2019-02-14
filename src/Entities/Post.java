@@ -9,8 +9,11 @@ public class Post {
 	private Date moment;
 	private String title;
 	private String content;
-	private int likes;
-	private List<Comment> comments;
+	private Integer likes;
+	private List<Comment> comments = new ArrayList<Comment>();
+	
+	public Post() {	
+	}
 	
 	public Post(Date moment, String title, String content, int likes) {
 		super();
@@ -18,7 +21,6 @@ public class Post {
 		this.title = title;
 		this.content = content;
 		this.likes = likes;
-		comments = new ArrayList<Comment>();
 	}
 
 	public Date getMoment() {
