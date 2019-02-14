@@ -62,4 +62,15 @@ public class Post {
 	public void removeComment(Comment c) {
 		comments.remove(c);
 	}
+	
+	
+	public String toString() {
+		
+		StringBuilder sb = new StringBuilder();
+		sb.append(title + "\n");
+		
+		return "";
+	}
 }
+
+
